@@ -1,3 +1,4 @@
 100, Slam Dunk, Deporte, NN, 1990
 101, One Piece, Shonnen, Oda, 2001
 206, SNK, Seinen, BLod, 2011
+11757, Pulp Fiction, Drama, Tarantino, 1989

@@ -1,4 +1,5 @@
 import os
+from random import randrange
 
 #Muestra el menu para que el usuario interactue
 def mostrar_menu():
@@ -25,7 +26,7 @@ def get_opcion():
 #Le pide al usuario los datos de la pelicula y devuelve un diccionario con la pelicula
 def agregar_pelicula():
     #Le pide al usuario los datos
-    cod = input("Ingresa el codigo de la pelicula: ")
+    cod = str(randrange(10000,99999,1))
     nombre = input("Ingresa el nombre de la pelicula: ")
     categoria = input("Ingresa la categoria de la pelicula: ")
     director = input("Ingresa el director de la pelicula: ")
@@ -33,6 +34,7 @@ def agregar_pelicula():
 
     #Guarda los datos que ingreso el usuario como un diccionario en 'res'
     res = {"codigo":cod,"nombre":nombre,"categoria":categoria,"director":director,"año":anio}
+    print(f"Pelicula guardada correctamente con el codigo {cod}")
     #Retorna 'res'
     return res
 

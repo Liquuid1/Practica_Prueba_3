@@ -17,6 +17,7 @@ while op !=4:
     if op == 1:
         system("cls")
         peliculas.append(fun.agregar_pelicula())
+        system("pause")
     elif op == 2:
         system("cls")
         fun.listar_peliculas(peliculas)

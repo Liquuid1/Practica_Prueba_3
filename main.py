@@ -1,9 +1,11 @@
 import fun
-from os import system
+from os import system, stat
 
 op = 0
-peliculas = [] #lista
-#codigo,nombre,categoria,director,actores,año
+peliculas = []
+if stat('lista_peliculas.txt').st_size != 0:
+    fun.cargar_archivo(peliculas)
+
 
 while op !=4:
     system("cls")
@@ -23,4 +25,3 @@ while op !=4:
         system("pause")
 
 fun.crear_archivo(peliculas)
-

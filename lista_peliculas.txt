@@ -1,2 +1,4 @@
-100, A, B, C, 2000
-101, X, Y, Z, 2001
+100, Intensamente, Infantil, Disney, 2018
+100, Intensamente, Infantil, Disney, 2018
+102, Rambo, Acción, Stallone, 1980
+200, Karate Kid, Drama, Miyagi, 1979

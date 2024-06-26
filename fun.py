@@ -1,3 +1,5 @@
+import os
+
 def mostrar_menu():
     menu = """[1] Agregar pelicula
 [2] Listar peliculas
@@ -60,5 +62,14 @@ def buscar_pelicula(lista):
 def crear_archivo(lista):
     with open("lista_peliculas.txt","w") as archivo:
         for i in lista:
-            res = i["codigo"]+", "+i["nombre"]+", "+i["categoria"]+", "+i["director"]+", "+i["año"]+"\n"
+            res = i["codigo"]+", "+i["nombre"]+", "+i["categoria"]+", "+i["director"]+", "+i["año"]
             archivo.write(res)
+
+def cargar_archivo(lista):
+    with open("lista_peliculas.txt","r") as archivo:
+        lector = archivo.readlines()
+        for i in lector:       
+            res = i.split(", ")
+            res[4].rstrip("\n")
+            dic = {"codigo":res[0],"nombre":res[1],"categoria":res[2],"director":res[3],"año":res[4]}
+            lista.append(dic)

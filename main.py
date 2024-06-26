@@ -1,9 +1,11 @@
 import fun
 from os import system, stat
 
-op = 0
-peliculas = []
-if stat('lista_peliculas.txt').st_size != 0:
+op = 0 #opcion que ingresa el usuario para interactuar con el menu
+peliculas = [] #lista de peliculas vacia, aqui se guardaran los diccionarios
+
+#Esto verifica si el archivo esta NO esta vacio, si no esta vacio, se sube lo que esta en el archivo a lista peliculas
+if stat('lista_peliculas.txt').st_size != 0: 
     fun.cargar_archivo(peliculas)
 
 

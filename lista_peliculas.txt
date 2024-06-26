@@ -1,4 +1,3 @@
-100, Intensamente, Infantil, Disney, 2018
-100, Intensamente, Infantil, Disney, 2018
-102, Rambo, Acción, Stallone, 1980
-200, Karate Kid, Drama, Miyagi, 1979
+100, Slam Dunk, Deporte, NN, 1990
+101, One Piece, Shonnen, Oda, 2001
+206, SNK, Seinen, BLod, 2011
